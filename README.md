@@ -2,7 +2,28 @@
 
 A personal **cloud security engineering portfolio project** exploring AWS, Terraform, IAM and secure delivery. This is Option A from the November 2026–January 2027 roadmap.
 
-> **Status:** Starter scaffold; AWS has **not** been deployed or validated. GitHub Actions only runs unit tests.
+**Status: Initial AWS deployment completed — 6 November 2026**
+
+The first version of the serverless architecture has been provisioned in AWS Sydney (`ap-southeast-2`) using Terraform.
+
+**Completed:**
+
+- Terraform initialised and configuration validated.
+- Deployment plan reviewed: 12 resources to create.
+- Initial infrastructure deployment completed.
+- API Gateway endpoint provisioned.
+- DynamoDB table provisioned.
+- Unauthenticated API request rejected with HTTP `403 Forbidden`, as intended.
+
+**Next milestones:**
+
+- Verify and document successful IAM-authorised API requests.
+- Test creating and retrieving DynamoDB items.
+- Inspect CloudWatch logs and investigate how application activity is recorded.
+- Review Lambda execution-role permissions and API Gateway authorisation.
+- Introduce infrastructure security checks and automated testing.
+
+This is an educational cloud security engineering project, not a production-ready application.
 
 ## Architecture
 
